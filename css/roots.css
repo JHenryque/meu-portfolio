@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rochester&family=Rubik+Distressed&family=Sacramento&display=swap");
+
+:root {
+  /* --azul-degrade: linear-gradient(98.54deg, #002f52 35.49%, #326589 140.37%); */
+  --azul-degrade: linear-gradient(260deg, #6439ff, #4f75ff, #00ccdd, #7cf5ff);
+  --cor-de-fundo: aliceblue;
+  --branco: #ffffff;
+  --laranja: #eb7d00;
+  --azul: #002f52;
+  --preto-fusco: #333232;
+  --cinza: #474646;
+  --cinza-claro: #858585;
+  --cor-js: #fabc3f;
+  --cor-html: #c40c0c;
+  --cor-php: #6439ff;
+  --cor-react: #4f75ff;
+  --cor-vermelho: #eb5a3c;
+  --cor-azulEscuro: #10375c;
+  --cor-inst: #a51174;
+
+  --fonte-meu-nome: "Sacramento", serif;
+  --fonte-principal: "Poppins";
+  --fonte-sobre-min: "Rochester", serif;
+  --fonte-title-page: "Diplomata", serif;
+  --fonte-agbalumo: "Agbalumo", serif;
+  --fonte-rubik: "Rubik Distressed", serif;
+}

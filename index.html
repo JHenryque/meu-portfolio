@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="fontawesome/css/solid.css" rel="stylesheet" />
+    <link href="fontawesome/css/sharp-thin.css" rel="stylesheet" />
+    <link href="fontawesome/css/duotone-thin.css" rel="stylesheet" />
+    <link href="fontawesome/css/sharp-duotone-thin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/stylles.css" />
+    <title>Meu Portfolio</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div>
+        <a class="logon-marca" href="#"><h1>Meu Portfólio</h1></a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="hamburguer active_bars" id="menu-hamburguer">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="menu-close" id="menu-close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <nav class="menu-mobile">
+        <ul>
+          <a href="#sobre"><li>Sobre</li></a>
+          <a href="#habilidades"><li>Habilidades</li></a>
+          <a href="#contato"><li>Contato</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main class="container-main">
+      <section class="meus-dados">
+        <div class="banner">
+          <div>
+            <div class="minha-foto">
+              <img src="img/minha-foto.jpg" alt="Minha Foto" />
+            </div>
+          </div>
+          <div id="#sobre" class="dados-pessoais">
+            <h1 class="nome_my">Jose Henrique Ferreira</h1>
+            <p class="titulo">Desenvolvedor Back-End e Front-End</p>
+            <ul class="sobre_min">
+              <li class="li-pessoal">
+                <p class="text-pessoal">
+                  Sou um desenvolvedor apaixonado por criar soluções eficientes
+                  e experiências digitais cativantes. Estou Cursando Engenharia
+                  de Software na Faculdade UniCesumar, Tenho Cursos online na
+                  Alura, Udemy, Danki Code, e outros , nas áreas de
+                  desenvolvimento front-end e back-end.
+                </p>
+              </li>
+
+              <li class="li-pessoal">
+                <p class="text-pessoal">
+                  Minha abordagem é focada em entregar código limpo, funcional e
+                  escalável, sempre priorizando a usabilidade e a eficiência.
+                  Estou constantemente me atualizando com as melhores práticas
+                  do mercado e novas ferramentas para oferecer resultados de
+                  alta qualidade.
+                </p>
+              </li>
+
+              <li class="li-pessoal">
+                <p class="text-pessoal">
+                  Tenho Curso de Tecnico de Manutenção de Computadores e
+                  Nootbook. Trabalhei na Secretaria de Educaçao periodo de
+                  quatro anos. Sou uma pessoa motivador, dedicado e Correto,
+                  gosto de trabalhar em equipe. Se você precisa de alguém para
+                  transformar ideias em realidade digital, estou pronto para
+                  contribuir com projetos desafiadores e inovadores!
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="title_page" id="habilidades">
+        <h2>Habilidades em Linguangem</h2>
+      </div>
+
+      <section class="habilidades">
+        <ul>
+          <li><i class="fa-brands fa-js"></i> JavaScript (Node.js)</li>
+          <li><i class="fa-brands fa-html5"></i> HTML</li>
+          <li><i class="fa-brands fa-php"></i> PHP</li>
+          <li>
+            <i class="fa-brands fa-react"></i>
+            Biblioteca para Web (React.ts, React.js, React-Router, Redux)
+          </li>
+          <li>
+            <i class="fa-sharp fa-solid fa-database"></i> Banco de Dados (MySQL)
+          </li>
+          <li><i class="fa-brands fa-git-alt"></i> Versionamento (Git)</li>
+          <li><i class="fa-sharp fa-solid fa-c"></i> Linguangem C</li>
+        </ul>
+      </section>
+
+      <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <form id="form" action="https://formspree.io/f/manqwpqv" method="POST">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+          <p class="error-message"></p>
+          <button id="enviar" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>
+        <a
+          href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=AVdkyDnc-i0RU1p372NPP7gV_TSPim8zSssisXPRNVTNQ7adybwHo1wWDXYZbP91Nr-9o1UvXatZ&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1644985006%3A1737480988120550&ddm=1"
+          >E-mail: henriquetecnicoinfo@gmail.com</a
+        >
+      </p>
+      <ul>
+        <li class="linkedin">
+          <a href="https://www.linkedin.com/in/henryque-ferreira-384472259/"
+            ><i id="linkedin" class="fa-brands fa-linkedin"></i> Linkedin</a
+          >
+        </li>
+        <li class="github">
+          <a href="https://github.com/JHenryque"
+            ><i id="github" class="fa-brands fa-square-github"></i> Github</a
+          >
+        </li>
+        <li class="instagram">
+          <a href="https://www.instagram.com/henryque_mtb/"
+            ><i id="instagram" class="fa-brands fa-square-instagram"></i>
+            Instagram</a
+          >
+        </li>
+      </ul>
+      <p>&copy; 2025 Jose Henrique Ferreira. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
