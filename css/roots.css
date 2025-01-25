@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rochester&family=Rubik+Distressed&family=Sacramento&display=swap");
 
 :root {
-  /* --azul-degrade: linear-gradient(98.54deg, #002f52 35.49%, #326589 140.37%); linear-gradient(260deg, #9aa6b2, #bcccdc, #d9eafd, #f8fafc)  linear-gradient(260deg, #9aa6b2, #bcccdc, #d9eafd, #f8fafc)*/
-  /*
-  linear-gradient(260deg, #202020, #444444, #787a91, #eeeeee)
-  */
   --azul-degrade: linear-gradient(260deg, #132436, #2d4b6b, #3f70b1, #2097ff);
+  --banner: linear-gradient(80deg, #0d2f55 40%, #091118, #1b2d42 100%);
   --cor-de-fundo: aliceblue;
   --branco: #ffffff;
+  --black: #0e0d0d;
   --laranja: #eb7d00;
   --azul: #002f52;
   --preto-fusco: #333232;
@@ -18,8 +16,9 @@
   --cor-php: #6439ff;
   --cor-react: #4f75ff;
   --cor-vermelho: #eb5a3c;
-  --cor-azulEscuro: #10375c;
+  --cor-azulEscuro: #0d253b;
   --cor-inst: #a51174;
+  --linkedin: #2097ff;
 
   --fonte-meu-nome: "Sacramento", serif;
   --fonte-principal: "Poppins";

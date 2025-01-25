@@ -38,10 +38,39 @@
         </ul>
       </nav>
     </header>
+    <section class="container-bn">
+      <div class="titleContacto">
+        <h2>Jose Henrique Ferreira</h2>
+        <p>Sou Engenharia de Software</p>
+        <a class="btn-contato" href="#contato"
+          >Contato <i class="fa-solid fa-phone"></i
+        ></a>
+        <ul>
+          <li class="linkedin">
+            <a href="https://www.linkedin.com/in/henryque-ferreira-384472259/"
+              ><i id="linkedin" class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="github">
+            <a href="https://github.com/JHenryque"
+              ><i id="github" class="fa-brands fa-square-github"></i>
+            </a>
+          </li>
+          <li class="instagram">
+            <a href="https://www.instagram.com/henryque_mtb/"
+              ><i id="instagram" class="fa-brands fa-square-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="img-foto">
+        <img src="img/img-banner.png" alt="Minha Foto Banner" />
+      </div>
+    </section>
     <main class="container-main">
-      <!-- <div class="title_page" id="sobre">
-        <h2>Sobre</h2>
-      </div> -->
+      <div class="title_page" id="sobre">
+        <h2>Sobre <i class="fa-solid fa-message-code"></i></h2>
+      </div>
       <section class="meus-dados">
         <div class="banner">
           <div>
@@ -88,7 +117,7 @@
       </section>
 
       <div class="title_page" id="habilidades">
-        <h2>Habilidades em Linguangem</h2>
+        <h2>Habilidades <i class="fa-solid fa-code"></i></h2>
       </div>
 
       <section class="habilidades">
@@ -118,9 +147,20 @@
         <h2>Contato</h2>
         <form id="form" action="https://formspree.io/f/manqwpqv" method="POST">
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu E-mail"
+            required
+          />
           <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" name="mensagem" required></textarea>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            placeholder="Digite sua mensagem"
+            required
+          ></textarea>
           <p class="error-message"></p>
           <button id="enviar" type="submit">Enviar</button>
         </form>

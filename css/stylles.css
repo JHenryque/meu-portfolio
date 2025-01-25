@@ -28,7 +28,7 @@ li {
   padding: 44px;
   background: var(--azul-degrade);
   border-bottom: 2px solid var(--branco);
-  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.658);
+  box-shadow: 0px 0px 4px 4px var(--branco);
 }
 
 .logon-marca h1 {
@@ -73,6 +73,7 @@ li {
   text-align: center;
   transition: 0.2s;
   padding: 20px 0;
+  z-index: 1;
 
   & ul {
     display: flex;
@@ -87,6 +88,75 @@ li {
       border-bottom: 1px solid var(--branco);
       padding: 1rem 0;
     }
+  }
+}
+
+.container-bn {
+  width: 100%;
+  height: 43rem;
+  background: var(--banner);
+  margin-top: 8px;
+  display: flex;
+  padding: 0 15%;
+  justify-content: space-between;
+
+  & .titleContacto {
+    align-self: center;
+
+    & h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      font-family: var(--fonte-agbalumo);
+      color: var(--branco);
+    }
+
+    & p {
+      font-size: 1.3rem;
+      color: var(--branco);
+      margin-bottom: 3rem;
+    }
+
+    & .btn-contato {
+      font-size: 1.3rem;
+      color: var(--branco);
+      background: var(--cor-azulEscuro);
+      padding: 0.5rem;
+      border-radius: 15px;
+      box-shadow: 0px 0px 4px 4px #ffffffa9;
+    }
+
+    & .btn-contato:hover {
+      background: transparent;
+      border: 1px solid var(--branco);
+    }
+
+    & ul {
+      margin-top: 4rem;
+      display: flex;
+      gap: 2rem;
+      font-size: 3.5rem;
+
+      & #github {
+        color: var(--cor-vermelho);
+      }
+
+      & #instagram {
+        color: var(--cor-inst);
+      }
+
+      & #linkedin {
+        color: var(--linkedin);
+      }
+    }
+  }
+
+  & .banner-box {
+    align-items: center;
+  }
+
+  & .img-foto img {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -107,9 +177,9 @@ li {
     & .banner {
       padding: 25px;
       display: flex;
-      background-color: rgba(63, 62, 62, 0.486);
+      background-color: var(--cor-de-fundo);
       border-radius: 15px;
-      box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.651);
+      box-shadow: 0px 0px 4px 4px rgba(250, 248, 248, 0.651);
     }
 
     & .minha-foto {
@@ -133,7 +203,7 @@ li {
       & .titulo {
         font-size: 1.2rem;
         margin-bottom: 30px;
-        color: var(--branco);
+        color: var(--black);
       }
 
       & .sobre_min {
@@ -144,7 +214,7 @@ li {
 
         & .li-pessoal {
           font-size: 1.3rem;
-          color: var(--branco);
+          color: var(--azul);
 
           & strong {
             font-weight: 700;
@@ -273,19 +343,19 @@ li {
 }
 
 .title_page h2 {
-  margin-bottom: 57px;
+  margin-bottom: 3rem;
   padding: 45px;
   height: 40px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   font-family: var(--fonte-agbalumo);
-  color: var(--azul);
+  color: var(--cor-de-fundo);
 }
 
 .nome_my {
   font-size: 4rem;
   font-family: var(--fonte-sobre-min);
-  color: var(--branco);
+  color: var(--cor-azulEscuro);
 }
 
 .rodape {
@@ -339,6 +409,19 @@ body {
 }
 
 @media screen and (max-width: 980px) {
+  .container-bn {
+    padding: 0 3%;
+    & .titleContacto {
+      & h2 {
+        font-size: 2rem;
+      }
+
+      & p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
   .container-main {
     padding: 0 2%;
   }
@@ -381,6 +464,29 @@ body {
 
   .active_bars {
     display: block;
+  }
+
+  .container-bn {
+    position: relative;
+    & .titleContacto {
+      margin-top: 22rem;
+      z-index: 1;
+
+      & h2 {
+        font-size: 2rem;
+      }
+
+      & p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  & .img-foto img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 400px;
   }
 
   .container-main {
@@ -440,6 +546,23 @@ body {
 }
 
 @media screen and (max-width: 440px) {
+  .container-bn {
+    & .titleContacto {
+      & h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        font-family: var(--fonte-agbalumo);
+        color: var(--branco);
+      }
+
+      & p {
+        font-size: 1rem;
+        color: var(--branco);
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
   .container-main {
     padding: 0 2%;
   }
@@ -482,7 +605,7 @@ body {
     font-size: 0.05rem;
   }
 
-  .rodape ul li a {
-    font-size: 1.2rem;
+  .rodape ul li a I {
+    font-size: 2rem;
   }
 }
