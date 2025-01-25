@@ -33,7 +33,7 @@ li {
 
 .logon-marca h1 {
   font-family: var(--fonte-agbalumo);
-  color: var(--cor-inst);
+  color: var(--cor-azulEscuro);
 }
 
 .cabecalho ul {
@@ -44,7 +44,7 @@ li {
 .cabecalho li a {
   font-size: 1.3rem;
   font-family: var(--fonte-agbalumo);
-  color: var(--preto-fusco);
+  color: var(--branco);
 }
 
 .hamburguer {
@@ -83,7 +83,7 @@ li {
     & a li {
       font-size: 1.3rem;
       font-family: var(--fonte-agbalumo);
-      color: var(--preto-fusco);
+      color: var(--branco);
       border-bottom: 1px solid var(--branco);
       padding: 1rem 0;
     }
@@ -157,7 +157,7 @@ li {
   & .habilidades ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 22px;
+    gap: 2rem 1rem;
     justify-content: space-evenly;
     width: 100%;
 
@@ -170,7 +170,8 @@ li {
       display: flex;
       align-items: center;
       flex-flow: column;
-      padding: 20px;
+      width: 40rem;
+      padding: 2rem 1rem;
       color: var(--branco);
       border-radius: 15px;
       box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.658);
@@ -178,24 +179,21 @@ li {
     }
 
     & li:nth-child(1) {
-      background-color: var(--cor-js);
-    }
-    & li:nth-child(2) {
       background-color: var(--cor-html);
     }
-    & li:nth-child(3) {
+    & li:nth-child(2) {
       background-color: var(--cor-php);
     }
-    & li:nth-child(4) {
+    & li:nth-child(3) {
       background-color: var(--cor-react);
     }
-    & li:nth-child(5) {
+    & li:nth-child(4) {
       background-color: var(--azul);
     }
-    & li:nth-child(6) {
+    & li:nth-child(5) {
       background-color: var(--cor-vermelho);
     }
-    & li:nth-child(7) {
+    & li:nth-child(6) {
       background-color: var(--cor-azulEscuro);
     }
   }
@@ -268,6 +266,10 @@ li {
       }
     }
   }
+}
+
+.fullstack {
+  background: linear-gradient(80deg, red, blue, rgb(255, 238, 0));
 }
 
 .title_page h2 {
@@ -355,6 +357,10 @@ body {
   .text-pessoal {
     font-size: 1.2rem;
   }
+
+  .habilidades ul {
+    gap: 0.5rem 0;
+  }
 }
 
 @media screen and (max-width: 655px) {
@@ -364,7 +370,7 @@ body {
 
   .hamburguer {
     font-size: 2.5rem;
-    color: var(--azul);
+    color: var(--branco);
   }
 
   .menu-close {
@@ -396,14 +402,17 @@ body {
   }
 
   .habilidades {
+    width: 100%;
     flex-direction: column;
   }
 
-  .habilidades ul li {
-    width: 100%;
-    gap: 0.5rem;
-    font-size: 1px;
+  .habilidades ul {
+    gap: 0.5rem 0;
+  }
 
+  .habilidades ul li {
+    font-size: 1em;
+    width: 100%;
     & i {
       font-size: 0.2rem;
     }
