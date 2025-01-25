@@ -97,7 +97,7 @@ li {
   background: var(--banner);
   margin-top: 8px;
   display: flex;
-  padding: 0 15%;
+  padding: 0 17%;
   justify-content: space-between;
 
   & .titleContacto {
