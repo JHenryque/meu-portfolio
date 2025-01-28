@@ -9,8 +9,8 @@
   --laranja: #eb7d00;
   --azul: #002f52;
   --preto-fusco: #333232;
-  --cinza: #474646;
-  --cinza-claro: #858585;
+  --cinza: rgba(0, 0, 0, 0.356);
+  --cinza-claro: #b9b9b9;
   --cor-js: #fabc3f;
   --cor-html: #c40c0c;
   --cor-php: #6439ff;

@@ -268,6 +268,102 @@ li {
     }
   }
 
+  & .projetos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 85px;
+    width: 90%;
+    align-items: center;
+    background-color: var(--cinza);
+    background-clip: border-box;
+    border: 4px dashed var(--branco);
+    padding: 20px 5%;
+    border-radius: 15px;
+
+    & h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: var(--fonte-agbalumo);
+      color: var(--branco);
+      margin-bottom: 2.5rem;
+    }
+
+    & .flex-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    & .list-projeto {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 33%;
+      padding: 1.5rem 2%;
+      border-radius: 15px;
+      box-shadow: 0px 0px 4px 4px rgba(4, 47, 187, 0.74);
+      background-color: var(--cor-react);
+      margin-bottom: 2.5rem;
+
+      & h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--branco);
+        margin-bottom: 0.5rem;
+      }
+
+      & p {
+        font-size: 1rem;
+        color: var(--branco);
+        line-height: 1.6rem;
+
+        & .react {
+          color: var(--linkedin);
+          background-color: aliceblue;
+          font-weight: 700;
+          border-radius: 15px;
+          padding: 0 0.4rem;
+        }
+        & .redux {
+          color: var(--azul);
+          background-color: aliceblue;
+          font-weight: 700;
+          border-radius: 15px;
+          padding: 0 0.4rem;
+        }
+        & .faribase {
+          color: var(--cor-vermelho);
+          background-color: aliceblue;
+          font-weight: 700;
+          border-radius: 15px;
+          padding: 0 0.4rem;
+        }
+        & a {
+          color: var(--branco);
+          background-color: var(--cor-html);
+          border-radius: 15px;
+          padding: 0 0.4rem;
+        }
+
+        & a:hover {
+          box-shadow: inset 0px 0px 10px 4px rgba(0, 0, 0, 0.87);
+          background-color: transparent;
+        }
+      }
+    }
+
+    & .list-projeto:hover {
+      background-color: var(--cor-de-fundo);
+      box-shadow: inset 0px 0px 14px 4px rgba(0, 0, 0, 0.658);
+
+      & h3,
+      p {
+        color: var(--azul);
+      }
+    }
+  }
+
   & .contato {
     margin-top: 85px;
     width: 80%;
@@ -426,6 +522,14 @@ body {
     padding: 0 2%;
   }
 
+  .projetos {
+    padding: 0 1%;
+
+    & .flex-box .list-projeto {
+      width: 45%;
+    }
+  }
+
   .banner {
     flex-direction: column;
     align-items: center;
@@ -446,7 +550,7 @@ body {
   }
 }
 
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 750px) {
   .menu {
     display: none;
   }
@@ -458,7 +562,7 @@ body {
 
   .menu-close {
     font-size: 2.5rem;
-    color: var(--azul);
+    color: var(--branco);
     cursor: pointer;
   }
 
@@ -466,10 +570,15 @@ body {
     display: block;
   }
 
+  .cabecalho ul {
+    gap: 0;
+  }
+
   .container-bn {
     position: relative;
+    max-height: 600px;
     & .titleContacto {
-      margin-top: 22rem;
+      margin-top: 18rem;
       z-index: 1;
 
       & h2 {
@@ -483,14 +592,25 @@ body {
   }
 
   & .img-foto img {
+    max-width: 400px;
+    max-height: 550px;
     position: absolute;
-    left: 0;
-    top: 0;
+    right: 50px;
+    bottom: 0;
     height: 400px;
   }
 
   .container-main {
     padding: 0 2%;
+
+    & .projetos {
+      width: 100%;
+      padding: 0 1%;
+
+      & .flex-box .list-projeto {
+        width: 100%;
+      }
+    }
   }
   .banner {
     flex-direction: column;
@@ -546,6 +666,9 @@ body {
 }
 
 @media screen and (max-width: 440px) {
+  .cabecalho ul {
+    gap: 0;
+  }
   .container-bn {
     & .titleContacto {
       & h2 {
@@ -561,10 +684,20 @@ body {
         margin-bottom: 3rem;
       }
     }
+    & .img-foto img {
+      position: absolute;
+      right: 0;
+    }
   }
 
   .container-main {
     padding: 0 2%;
+
+    & .meus-dados {
+      & .dados-pessoais {
+        padding: 0;
+      }
+    }
   }
 
   h1.nome_my {

@@ -18,8 +18,4 @@ document.addEventListener("DOMContentLoaded", () => {
     btn_menu.classList.add("active_bars");
     btn_close.classList.remove("active_bars");
   });
-
-  btn_enviar.addEventListener("click", () => {
-    alert("Portfólio carregado com sucesso!");
-  });
 });
