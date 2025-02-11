@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rochester&family=Rubik+Distressed&family=Sacramento&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --azul-degrade: linear-gradient(260deg, #132436, #2d4b6b, #3f70b1, #2097ff);
   --banner: linear-gradient(80deg, #0d2f55 40%, #091118, #1b2d42 100%);

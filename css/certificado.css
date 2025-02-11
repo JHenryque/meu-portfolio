@@ -1,0 +1,39 @@
+@import url("roots.css");
+
+.certificado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--azul-degrade);
+  padding: 2rem 3%;
+}
+
+.certificado img {
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.658);
+  padding: 2rem;
+  background-color: aliceblue;
+  margin: 2rem 0;
+}
+
+.certificado img:nth-child(1) {
+  width: 38%;
+}
+
+@media (max-width: 1210px) {
+  .certificado img {
+    width: 80%;
+  }
+  .certificado img:nth-child(1) {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .certificado img {
+    width: 100%;
+  }
+  .certificado img:nth-child(1) {
+    width: 100%;
+  }
+}
