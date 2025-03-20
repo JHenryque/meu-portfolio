@@ -105,6 +105,12 @@ li {
       font-size: 1.3rem;
       color: var(--branco);
       margin-bottom: 3rem;
+      border-right: 8px solid var(--branco);
+      width: 28ch;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3s steps(28) infinite alternate,
+        blink 0.5s infinite step-end alternate;
     }
 
     & .btn-contato {
@@ -148,6 +154,18 @@ li {
   & .img-foto img {
     width: 100%;
     height: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
 
@@ -279,6 +297,11 @@ li {
       margin-bottom: 2.5rem;
     }
 
+    & img {
+      width: 100%;
+      height: 15rem;
+    }
+
     & .flex-box {
       display: flex;
       flex-wrap: wrap;
@@ -392,6 +415,7 @@ li {
         border: 1px solid var(--azul);
         margin-bottom: 1.5rem;
         border: 0;
+        outline: none;
       }
 
       & textarea {
@@ -401,6 +425,7 @@ li {
         margin-bottom: 1.5rem;
         border: 0;
         resize: vertical;
+        outline: none;
       }
 
       & button {
@@ -493,6 +518,21 @@ li {
 
 body {
   background: var(--azul-degrade);
+}
+
+.com_sucesso,
+.cor_obr {
+  background-color: #faacac;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #610c0c;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.com_sucesso {
+  background-color: #80e667;
+  color: #103f10;
 }
 
 @media screen and (max-width: 980px) {
