@@ -11,6 +11,8 @@ li {
   color: var(--preto-fusco);
 }
 
+/* ----------------------------------------------- header ----*/
+
 .cabecalho {
   width: 100%;
   display: flex;
@@ -34,7 +36,8 @@ li {
 
 .cabecalho li a {
   font-size: 1.3rem;
-  font-family: var(--fonte-agbalumo);
+  font-weight: 900;
+  font-family: var(--fonte-openSans);
   color: var(--branco);
 }
 
@@ -82,48 +85,51 @@ li {
   }
 }
 
+/* -------------------------------------------------- banner ----*/
 .container-bn {
   width: 100%;
   height: 43rem;
-  background: var(--banner);
-  margin-top: 8px;
+  background: var(--baner_container);
   display: flex;
-  padding: 0 17%;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 3%;
 
   & .titleContacto {
     align-self: center;
 
     & h2 {
       font-size: 2.5rem;
-      font-weight: 600;
-      font-family: var(--fonte-agbalumo);
-      color: var(--branco);
+      font-weight: 900;
+      font-family: var(--fonte-roboto);
+      color: var(--cor-azulEscuro);
     }
 
     & p {
       font-size: 1.3rem;
-      color: var(--branco);
+      color: var(--preto-fusco);
       margin-bottom: 3rem;
-      border-right: 8px solid var(--branco);
-      width: 28ch;
+      border-right: 8px solid var(--preto-fusco);
+      width: 23.7ch;
       white-space: nowrap;
       overflow: hidden;
-      animation: typing 3s steps(28) infinite alternate,
+      animation: typing 3.5s steps(23) infinite alternate,
         blink 0.5s infinite step-end alternate;
     }
 
     & .btn-contato {
       font-size: 1.3rem;
       color: var(--branco);
-      background: var(--cor-azulEscuro);
+      background: var(--banner);
       padding: 0.5rem;
       border-radius: 15px;
       box-shadow: 0px 0px 4px 4px #ffffffa9;
     }
 
     & .btn-contato:hover {
-      background: transparent;
+      background: var(--cor-azulEscuro);
       border: 1px solid var(--branco);
     }
 
@@ -169,6 +175,7 @@ li {
   }
 }
 
+/* -------------------------------------- main ----*/
 .container-main {
   margin: 0 auto;
   width: 100%;
@@ -215,6 +222,8 @@ li {
         color: var(--black);
       }
 
+      /* ----------------------------------------sobre_min --- */
+
       & .sobre_min {
         display: flex;
         flex-direction: column;
@@ -233,6 +242,7 @@ li {
     }
   }
 
+  /* ------------------------------------ habilidades --- */
   & .habilidades ul {
     display: flex;
     flex-wrap: wrap;
@@ -277,22 +287,19 @@ li {
     }
   }
 
+  /* ------------------------------------ projetos --- */
   & .projetos {
     display: flex;
     flex-direction: column;
-    margin-top: 85px;
-    width: 90%;
+    margin: 2.5rem 0;
+    width: 100%;
     align-items: center;
-    background-color: var(--cinza);
-    background-clip: border-box;
-    border: 4px dashed var(--branco);
-    padding: 20px 5%;
     border-radius: 15px;
 
     & h2 {
       font-size: 2rem;
-      font-weight: 600;
-      font-family: var(--fonte-agbalumo);
+      font-weight: 900;
+      font-family: var(--fonte-openSans);
       color: var(--branco);
       margin-bottom: 2.5rem;
     }
@@ -300,6 +307,8 @@ li {
     & img {
       width: 100%;
       height: 15rem;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
     }
 
     & .flex-box {
@@ -312,72 +321,54 @@ li {
     & .list-projeto {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
-      width: 33%;
-      padding: 1.5rem 2%;
+      width: 25%;
       border-radius: 15px;
-      box-shadow: 0px 0px 4px 4px rgba(4, 47, 187, 0.74);
-      background-color: var(--cor-react);
-      margin-bottom: 2.5rem;
+      box-shadow: 0px 0px 4px 4px var(--branco);
+      background-color: var(--branco);
 
-      & h3 {
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: var(--branco);
-        margin-bottom: 0.5rem;
+      & .card_text {
+        padding: 0.6rem;
+
+        & h3 {
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: var(--cor-azulEscuro);
+          margin-bottom: 0.5rem;
+        }
+
+        & p {
+          font-size: 1rem;
+          color: var(--cor-azulEscuro);
+        }
       }
 
-      & p {
+      & a {
+        margin-bottom: 1rem;
+        background-color: var(--baner_container);
+        border-radius: 15px;
         font-size: 1rem;
+        font-weight: 900;
+        color: var(--cor-azulEscuro);
+        padding: 1rem 0.4rem;
+        align-self: center;
+        padding: 0.3rem 0.6rem;
+      }
+      & a:hover {
+        background-color: var(--azul);
         color: var(--branco);
-        line-height: 1.6rem;
-
-        & .react {
-          color: var(--linkedin);
-          background-color: aliceblue;
-          font-weight: 700;
-          border-radius: 15px;
-          padding: 0 0.4rem;
-        }
-        & .redux {
-          color: var(--azul);
-          background-color: aliceblue;
-          font-weight: 700;
-          border-radius: 15px;
-          padding: 0 0.4rem;
-        }
-        & .faribase {
-          color: var(--cor-vermelho);
-          background-color: aliceblue;
-          font-weight: 700;
-          border-radius: 15px;
-          padding: 0 0.4rem;
-        }
-        & a {
-          color: var(--branco);
-          background-color: var(--cor-html);
-          border-radius: 15px;
-          padding: 0 0.4rem;
-        }
-
-        & a:hover {
-          box-shadow: inset 0px 0px 10px 4px rgba(0, 0, 0, 0.87);
-          background-color: transparent;
-        }
+        border: 3px solid var(--cor-azulEscuro);
+        transition: 0.2s;
+        box-shadow: 0px 0px 4px 1px var(--preto-fusco);
       }
     }
 
     & .list-projeto:hover {
-      background-color: var(--cor-de-fundo);
-      box-shadow: inset 0px 0px 14px 4px rgba(0, 0, 0, 0.658);
-
-      & h3,
-      p {
-        color: var(--azul);
-      }
+      box-shadow: 0px 0px 10px 10px var(--branco);
+      transition: 0.2s;
     }
   }
 
+/* ------------------------------------ contato --- */
   & .contato {
     margin-top: 85px;
     width: 80%;
@@ -392,8 +383,8 @@ li {
 
     & h2 {
       font-size: 2rem;
-      font-weight: 600;
-      font-family: var(--fonte-agbalumo);
+      font-weight: 900;
+      font-family: var(--fonte-openSans);
       color: var(--azul);
       margin-bottom: 0.5rem;
     }
@@ -459,14 +450,15 @@ li {
   padding: 45px;
   height: 40px;
   font-size: 1.8rem;
-  font-weight: 600;
-  font-family: var(--fonte-agbalumo);
+  font-weight: 900;
+  font-family: var(--fonte-openSans);
   color: var(--cor-de-fundo);
 }
 
 .nome_my {
-  font-size: 4rem;
-  font-family: var(--fonte-sobre-min);
+  font-size: 3.2rem;
+  font-weight: 900;
+  font-family: var(--fonte-roboto);
   color: var(--cor-azulEscuro);
 }
 
@@ -538,238 +530,254 @@ body {
 @media screen and (max-width: 980px) {
   .container-bn {
     padding: 0 3%;
-    & .titleContacto {
-      & h2 {
-        font-size: 2rem;
-      }
 
-      & p {
-        font-size: 1.3rem;
-      }
-    }
-  }
+    .img-foto img {
+      max-width: 400px;
+      max-height: 550px;
+      position: absolute;
+      right: 50px;
+      bottom: 3rem;
+      height: 400px;
 
-  .container-main {
-    padding: 0 2%;
-  }
+      & .titleContacto {
+        & h2 {
+          font-size: 2rem;
+        }
 
-  .projetos {
-    padding: 0 1%;
-
-    & .flex-box .list-projeto {
-      width: 45%;
-    }
-  }
-
-  .banner {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-  }
-
-  .nome_my {
-    font-size: 3.5rem;
-  }
-
-  .text-pessoal {
-    font-size: 1.2rem;
-  }
-
-  .habilidades ul {
-    gap: 0.5rem 0;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .menu {
-    display: none;
-  }
-
-  .hamburguer {
-    font-size: 2.5rem;
-    color: var(--branco);
-  }
-
-  .menu-close {
-    font-size: 2.5rem;
-    color: var(--branco);
-    cursor: pointer;
-  }
-
-  .active_bars {
-    display: block;
-  }
-
-  .cabecalho ul {
-    gap: 0;
-  }
-
-  .container-bn {
-    position: relative;
-    max-height: 600px;
-    & .titleContacto {
-      margin-top: 18rem;
-      z-index: 1;
-
-      & h2 {
-        font-size: 2rem;
-      }
-
-      & p {
-        font-size: 1.1rem;
+        & p {
+          font-size: 1.3rem;
+        }
       }
     }
   }
+      .container-main {
+      padding: 0 2%;
+    }
 
-  & .img-foto img {
-    max-width: 400px;
-    max-height: 550px;
-    position: absolute;
-    right: 50px;
-    bottom: 0;
-    height: 400px;
-  }
-
-  .container-main {
-    padding: 0 2%;
-
-    & .projetos {
+    .projetos {
       width: 100%;
       padding: 0 1%;
 
       & .flex-box .list-projeto {
-        width: 100%;
+        width: 35%;
       }
     }
-  }
-  .banner {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-  }
 
-  .nome_my {
-    font-size: 3.5rem;
-  }
 
-  .text-pessoal {
-    font-size: 1.2rem;
-  }
+    .banner {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+    }
 
-  .habilidades {
-    width: 100%;
-    flex-direction: column;
-  }
+    .nome_my {
+      font-size: 3.5rem;
+    }
 
-  .habilidades ul {
-    gap: 0.5rem 0;
-  }
+    .text-pessoal {
+      font-size: 1.2rem;
+    }
 
-  .habilidades ul li {
-    font-size: 1em;
-    width: 100%;
-    & i {
-      font-size: 0.2rem;
+    .habilidades ul {
+      gap: 0.5rem 0;
+    }
+
+    .list-projeto {
+      width: 80%;
+      background-color: #103f10;
     }
   }
 
-  .title_page h2 {
-    font-size: 1.4rem;
-  }
+  @media screen and (max-width: 750px) {
+    .menu {
+      display: none;
+    }
 
-  #contato {
-    width: 100%;
-  }
+    .hamburguer {
+      font-size: 2.5rem;
+      color: var(--branco);
+    }
 
-  .contato h2 {
-    font-size: 1rem;
-  }
+    .menu-close {
+      font-size: 2.5rem;
+      color: var(--branco);
+      cursor: pointer;
+    }
 
-  .rodape ul li {
-    font-size: 0.05rem;
-  }
+    .active_bars {
+      display: block;
+    }
 
-  .rodape ul li a {
-    font-size: 1.2rem;
-  }
-}
+    .cabecalho ul {
+      gap: 0;
+    }
 
-@media screen and (max-width: 440px) {
-  .cabecalho ul {
-    gap: 0;
-  }
-  .container-bn {
-    & .titleContacto {
-      & h2 {
-        font-size: 1.8rem;
-        font-weight: 600;
-        font-family: var(--fonte-agbalumo);
-        color: var(--branco);
-      }
+    .container-bn {
+      position: relative;
+      max-height: 600px;
+      & .titleContacto {
+        margin-top: 1rem;
+        z-index: 1;
 
-      & p {
-        font-size: 1rem;
-        color: var(--branco);
-        margin-bottom: 3rem;
+        & h2 {
+          font-size: 2rem;
+        }
+
+        & p {
+          font-size: 1.1rem;
+        }
       }
     }
+
     & .img-foto img {
+      max-width: 400px;
+      max-height: 550px;
       position: absolute;
-      right: 0;
+      right: 50px;
+      bottom: 0;
+      height: 400px;
     }
-  }
 
-  .container-main {
-    padding: 0 2%;
+    .container-main {
+      padding: 0 2%;
 
-    & .meus-dados {
-      & .dados-pessoais {
-        padding: 0;
+      & .projetos {
+        width: 100%;
+        padding: 0 1%;
+
+        & .flex-box .list-projeto {
+          width: 100%;
+        }
       }
     }
-  }
+    .banner {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+    }
 
-  h1.nome_my {
-    font-size: 2rem;
-  }
+    .nome_my {
+      font-size: 3.5rem;
+    }
 
-  .text-pessoal {
-    font-size: 1rem;
-  }
+    .text-pessoal {
+      font-size: 1.2rem;
+    }
 
-  .habilidades {
-    flex-direction: column;
-  }
+    .habilidades {
+      width: 100%;
+      flex-direction: column;
+    }
 
-  .habilidades ul li {
-    width: 100%;
-    gap: 0.5rem;
-    font-size: 1px;
+    .habilidades ul {
+      gap: 0.5rem 0;
+    }
 
-    & i {
-      font-size: 0.2rem;
+    .habilidades ul li {
+      font-size: 1em;
+      width: 100%;
+      & i {
+        font-size: 0.2rem;
+      }
+    }
+
+    .title_page h2 {
+      font-size: 1.4rem;
+      font-family: var(--fonte-roboto);
+    }
+
+    #contato {
+      width: 100%;
+    }
+
+    .contato h2 {
+      font-size: 1rem;
+    }
+
+    .rodape ul li {
+      font-size: 0.05rem;
+    }
+
+    .rodape ul li a {
+      font-size: 1.2rem;
     }
   }
 
-  .title_page h2 {
-    font-size: 1.4rem;
-  }
+  @media screen and (max-width: 440px) {
+    .cabecalho ul {
+      gap: 0;
+    }
+    .container-bn {
+      & .titleContacto {
+        & h2 {
+          font-size: 1.8rem;
+          font-weight: 900;
+          font-family: var(--fonte-roboto);
+        }
 
-  #contato {
-    width: 100%;
-  }
+        & p {
+          font-size: 1.5rem;
+          margin-bottom: 3rem;
+        }
+      }
+      & .img-foto img {
+        position: absolute;
+        right: 0;
+      }
+    }
 
-  .contato h2 {
-    font-size: 1rem;
-  }
+    .container-main {
+      padding: 0 2%;
 
-  .rodape ul li {
-    font-size: 0.05rem;
-  }
+      & .meus-dados {
+        & .dados-pessoais {
+          padding: 0;
+        }
+      }
+    }
 
-  .rodape ul li a I {
-    font-size: 2rem;
+    h1.nome_my {
+      font-size: 2rem;
+    }
+
+    .text-pessoal {
+      font-size: 1rem;
+    }
+
+    .habilidades {
+      flex-direction: column;
+    }
+
+    .habilidades ul li {
+      width: 100%;
+      gap: 0.5rem;
+      font-size: 1px;
+
+      & i {
+        font-size: 0.2rem;
+      }
+    }
+
+    .title_page h2 {
+      font-size: 1.4rem;
+    }
+
+    #contato {
+      width: 100%;
+    }
+
+    .contato h2 {
+      font-size: 1rem;
+    }
+
+    .rodape ul li {
+      font-size: 0.05rem;
+    }
+
+    .rodape ul li a I {
+      font-size: 2rem;
+    }
   }
 }

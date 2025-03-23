@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rochester&family=Rubik+Distressed&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rochester&family=Rubik+Distressed&family=Sacramento&display=swap");
 
 * {
   margin: 0;
@@ -12,6 +12,7 @@
 :root {
   --azul-degrade: linear-gradient(260deg, #132436, #2d4b6b, #3f70b1, #2097ff);
   --banner: linear-gradient(80deg, #0d2f55 40%, #091118, #1b2d42 100%);
+  --baner_container: #82dfff;
   --cor-de-fundo: aliceblue;
   --branco: #ffffff;
   --black: #0e0d0d;
@@ -35,4 +36,7 @@
   --fonte-title-page: "Diplomata", serif;
   --fonte-agbalumo: "Agbalumo", serif;
   --fonte-rubik: "Rubik Distressed", serif;
+  --font-robotoMono: "Roboto Mono", monospace; /*weight 100 a 700*/
+  --fonte-roboto: "Roboto", sans-serif; /*weight 100 a 900*/
+  --fonte-openSans: "Open Sans", sans-serif;
 }
