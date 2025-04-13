@@ -9,6 +9,7 @@
     <link href="fontawesome/css/sharp-thin.css" rel="stylesheet" />
     <link href="fontawesome/css/duotone-thin.css" rel="stylesheet" />
     <link href="fontawesome/css/sharp-duotone-thin.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/stylles.css" />
     <title>Meu Portfolio</title>
   </head>
@@ -42,41 +43,78 @@
     </header>
     <div class="container-bn">
       <div class="titleContacto">
-        <h2>Sou Jose Henrique Ferreira</h2>
+        <h2 data-aos="fade-right" data-aos-duration="1000">
+          Sou Jose Henrique Ferreira
+        </h2>
 
         <p>Engenheiro de Software</p>
-        <a class="btn-contato" href="#contato"
-          >Contato <i class="fa-solid fa-phone"></i
-        ></a>
+        <button
+          class="btn-contato"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <a href="#contato">Contato <i class="fa-solid fa-phone"></i></a>
+        </button>
         <ul>
-          <li class="linkedin">
+          <li
+            class="linkedin"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
             <a
               href="https://www.linkedin.com/in/henryque-ferreira-384472259/"
               target="_blank"
               ><i id="linkedin" class="fa-brands fa-linkedin"></i
             ></a>
           </li>
-          <li class="github">
+          <li
+            class="github"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="600"
+            data-aos-offset="0"
+          >
             <a href="https://github.com/JHenryque" target="_blank"
               ><i id="github" class="fa-brands fa-square-github"></i>
             </a>
           </li>
-          <li class="instagram">
+          <li
+            class="instagram"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="900"
+            data-aos-offset="0"
+          >
             <a href="https://www.instagram.com/henryque_mtb/" target="_blank"
               ><i id="instagram" class="fa-brands fa-square-instagram"></i>
             </a>
           </li>
         </ul>
       </div>
-      <div class="img-foto">
+      <div
+        data-aos="fade-left"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+        class="img-foto"
+      >
         <img src="img/banner_img.jpg" alt="Minha Foto Banner" />
       </div>
     </div>
     <main class="container-main">
       <div class="title_page" id="sobre">
-        <h2>Sobre <i class="fa-solid fa-message-code"></i></h2>
+        <h2 data-aos="fade-up" data-aos-duration="1000">
+          Sobre <i class="fa-solid fa-message-code"></i>
+        </h2>
       </div>
-      <section class="meus-dados">
+      <section
+        class="meus-dados"
+        data-aos="zoom-in-up"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+      >
         <div class="banner">
           <div>
             <div class="minha-foto">
@@ -123,12 +161,19 @@
       </section>
 
       <div class="title_page" id="habilidades">
-        <h2>Habilidades <i class="fa-solid fa-code"></i></h2>
+        <h2 data-aos="fade-down" data-aos-duration="1000">
+          Habilidades <i class="fa-solid fa-code"></i>
+        </h2>
       </div>
 
       <section class="habilidades">
         <ul>
-          <li class="fullstack">
+          <li
+            class="fullstack"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <span>
               <i class="fa-brands fa-html5"></i>
               <i class="fa-brands fa-css3-alt"></i>
@@ -136,23 +181,54 @@
             </span>
             HTML | Css3 | JavaScript
           </li>
-          <li><i class="fa-brands fa-php"></i> PHP</li>
-          <li>
+          <li
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <i class="fa-brands fa-php"></i> PHP
+          </li>
+          <li
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <i class="fa-brands fa-react"></i>
             React.js | React.ts
           </li>
-          <li>
+          <li
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <i class="fa-sharp fa-solid fa-database"></i> Banco de Dados (MySQL)
           </li>
-          <li><i class="fa-brands fa-git-alt"></i> Versionamento (Git)</li>
-          <li><i class="fa-sharp fa-solid fa-c"></i> Linguangem C</li>
+          <li
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+          >
+            <i class="fa-brands fa-git-alt"></i> Versionamento (Git)
+          </li>
+          <li
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+          >
+            <i class="fa-sharp fa-solid fa-c"></i> Linguangem C
+          </li>
         </ul>
       </section>
 
       <section class="projetos" id="projetos">
-        <h2>Projetos</h2>
+        <h2 data-aos="fade-up" data-aos-duration="1000">Projetos</h2>
         <div class="flex-box">
-          <div class="list-projeto">
+          <div
+            class="list-projeto"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
             <img src="img/books-firebase.png" alt="imagens do projeto" />
             <div class="card_text">
               <h3>Lista de livros</h3>
@@ -165,7 +241,12 @@
               >Ver Projeto</a
             >
           </div>
-          <div class="list-projeto">
+          <div
+            class="list-projeto"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
             <img src="img/leyout llista.png" alt="imagens do projeto" />
             <div class="card_text">
               <h3>Lista de Compras</h3>
@@ -178,7 +259,12 @@
               >Ver Projeto</a
             >
           </div>
-          <div class="list-projeto">
+          <div
+            class="list-projeto"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
             <img src="img/imc.jpg" alt="imagens do projeto" />
             <div class="card_text">
               <h3>Calcular IMC</h3>
@@ -193,7 +279,12 @@
               >Ver Projeto</a
             >
           </div>
-          <div class="list-projeto">
+          <div
+            class="list-projeto"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
             <img src="img/jogo_acerta.png" alt="imagens do projeto" />
             <div class="card_text">
               <h3>Jogo acerta o numero</h3>
@@ -206,7 +297,12 @@
               >Ver Projeto</a
             >
           </div>
-          <div class="list-projeto">
+          <div
+            class="list-projeto"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
             <img src="img/bytebank.png" alt="imagens do projeto" />
             <div class="card_text">
               <h3>Bytebank</h3>
@@ -222,8 +318,8 @@
         </div>
       </section>
 
-      <section id="contato" class="contato">
-        <h2>Contato</h2>
+      <section id="contato" class="contato" data-aos="zoom-in">
+        <h2 data-aos="fade-up" data-aos-duration="1000">Contato</h2>
         <form id="form" action="https://formspree.io/f/manqwpqv" method="POST">
           <label for="email">Email:</label>
           <input
@@ -241,7 +337,15 @@
             required
           ></textarea>
           <span class="tdCampo_obr"></span>
-          <button id="enviar" type="submit">Enviar</button>
+          <button
+            data-aos="flip-right"
+            data-aos-delay="700"
+            data-aos-duration="1000"
+            id="enviar"
+            type="submit"
+          >
+            Enviar
+          </button>
         </form>
       </section>
     </main>
@@ -275,6 +379,11 @@
       </ul>
       <p>&copy; 2025 Jose Henrique Ferreira. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>

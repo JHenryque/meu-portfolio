@@ -120,12 +120,16 @@ li {
     }
 
     & .btn-contato {
-      font-size: 1.3rem;
-      color: var(--branco);
-      background: var(--banner);
-      padding: 0.5rem;
-      border-radius: 15px;
-      box-shadow: 0px 0px 4px 4px #ffffffa9;
+      border: 0;
+
+      & a {
+        font-size: 1.3rem;
+        color: var(--branco);
+        background: var(--banner);
+        padding: 0.5rem;
+        border-radius: 15px;
+        box-shadow: 0px 0px 4px 4px #ffffffa9;
+      }
     }
 
     & .btn-contato:hover {
@@ -368,7 +372,7 @@ li {
     }
   }
 
-/* ------------------------------------ contato --- */
+  /* ------------------------------------ contato --- */
   & .contato {
     margin-top: 85px;
     width: 80%;
@@ -550,234 +554,232 @@ body {
       }
     }
   }
-      .container-main {
-      padding: 0 2%;
-    }
+  .container-main {
+    padding: 0 2%;
+  }
 
-    .projetos {
+  .projetos {
+    width: 100%;
+    padding: 0 1%;
+
+    & .flex-box .list-projeto {
+      width: 35%;
+    }
+  }
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .nome_my {
+    font-size: 3.5rem;
+  }
+
+  .text-pessoal {
+    font-size: 1.2rem;
+  }
+
+  .habilidades ul {
+    gap: 0.5rem 0;
+  }
+
+  .list-projeto {
+    width: 80%;
+    background-color: #103f10;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .menu {
+    display: none;
+  }
+
+  .hamburguer {
+    font-size: 2.5rem;
+    color: var(--branco);
+  }
+
+  .menu-close {
+    font-size: 2.5rem;
+    color: var(--branco);
+    cursor: pointer;
+  }
+
+  .active_bars {
+    display: block;
+  }
+
+  .cabecalho ul {
+    gap: 0;
+  }
+
+  .container-bn {
+    position: relative;
+    max-height: 600px;
+    & .titleContacto {
+      margin-top: 1rem;
+      z-index: 1;
+
+      & h2 {
+        font-size: 2rem;
+      }
+
+      & p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  & .img-foto img {
+    max-width: 400px;
+    max-height: 550px;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    height: 400px;
+  }
+
+  .container-main {
+    padding: 0 2%;
+
+    & .projetos {
       width: 100%;
       padding: 0 1%;
 
       & .flex-box .list-projeto {
-        width: 35%;
-      }
-    }
-
-
-    .banner {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      width: 100%;
-    }
-
-    .nome_my {
-      font-size: 3.5rem;
-    }
-
-    .text-pessoal {
-      font-size: 1.2rem;
-    }
-
-    .habilidades ul {
-      gap: 0.5rem 0;
-    }
-
-    .list-projeto {
-      width: 80%;
-      background-color: #103f10;
-    }
-  }
-
-  @media screen and (max-width: 750px) {
-    .menu {
-      display: none;
-    }
-
-    .hamburguer {
-      font-size: 2.5rem;
-      color: var(--branco);
-    }
-
-    .menu-close {
-      font-size: 2.5rem;
-      color: var(--branco);
-      cursor: pointer;
-    }
-
-    .active_bars {
-      display: block;
-    }
-
-    .cabecalho ul {
-      gap: 0;
-    }
-
-    .container-bn {
-      position: relative;
-      max-height: 600px;
-      & .titleContacto {
-        margin-top: 1rem;
-        z-index: 1;
-
-        & h2 {
-          font-size: 2rem;
-        }
-
-        & p {
-          font-size: 1.1rem;
-        }
-      }
-    }
-
-    & .img-foto img {
-      max-width: 400px;
-      max-height: 550px;
-      position: absolute;
-      right: 50px;
-      bottom: 0;
-      height: 400px;
-    }
-
-    .container-main {
-      padding: 0 2%;
-
-      & .projetos {
         width: 100%;
-        padding: 0 1%;
-
-        & .flex-box .list-projeto {
-          width: 100%;
-        }
       }
     }
-    .banner {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      width: 100%;
-    }
+  }
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
 
-    .nome_my {
-      font-size: 3.5rem;
-    }
+  .nome_my {
+    font-size: 3.5rem;
+  }
 
-    .text-pessoal {
-      font-size: 1.2rem;
-    }
+  .text-pessoal {
+    font-size: 1.2rem;
+  }
 
-    .habilidades {
-      width: 100%;
-      flex-direction: column;
-    }
+  .habilidades {
+    width: 100%;
+    flex-direction: column;
+  }
 
-    .habilidades ul {
-      gap: 0.5rem 0;
-    }
+  .habilidades ul {
+    gap: 0.5rem 0;
+  }
 
-    .habilidades ul li {
-      font-size: 1em;
-      width: 100%;
-      & i {
-        font-size: 0.2rem;
-      }
-    }
-
-    .title_page h2 {
-      font-size: 1.4rem;
-      font-family: var(--fonte-roboto);
-    }
-
-    #contato {
-      width: 100%;
-    }
-
-    .contato h2 {
-      font-size: 1rem;
-    }
-
-    .rodape ul li {
-      font-size: 0.05rem;
-    }
-
-    .rodape ul li a {
-      font-size: 1.2rem;
+  .habilidades ul li {
+    font-size: 1em;
+    width: 100%;
+    & i {
+      font-size: 0.2rem;
     }
   }
 
-  @media screen and (max-width: 440px) {
-    .cabecalho ul {
-      gap: 0;
-    }
-    .container-bn {
-      & .titleContacto {
-        & h2 {
-          font-size: 1.8rem;
-          font-weight: 900;
-          font-family: var(--fonte-roboto);
-        }
+  .title_page h2 {
+    font-size: 1.4rem;
+    font-family: var(--fonte-roboto);
+  }
 
-        & p {
-          font-size: 1.5rem;
-          margin-bottom: 3rem;
-        }
+  #contato {
+    width: 100%;
+  }
+
+  .contato h2 {
+    font-size: 1rem;
+  }
+
+  .rodape ul li {
+    font-size: 0.05rem;
+  }
+
+  .rodape ul li a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .cabecalho ul {
+    gap: 0;
+  }
+  .container-bn {
+    & .titleContacto {
+      & h2 {
+        font-size: 1.8rem;
+        font-weight: 900;
+        font-family: var(--fonte-roboto);
       }
-      & .img-foto img {
-        position: absolute;
-        right: 0;
-      }
-    }
 
-    .container-main {
-      padding: 0 2%;
-
-      & .meus-dados {
-        & .dados-pessoais {
-          padding: 0;
-        }
-      }
-    }
-
-    h1.nome_my {
-      font-size: 2rem;
-    }
-
-    .text-pessoal {
-      font-size: 1rem;
-    }
-
-    .habilidades {
-      flex-direction: column;
-    }
-
-    .habilidades ul li {
-      width: 100%;
-      gap: 0.5rem;
-      font-size: 1px;
-
-      & i {
-        font-size: 0.2rem;
+      & p {
+        font-size: 1.3rem;
+        margin-bottom: 3rem;
       }
     }
-
-    .title_page h2 {
-      font-size: 1.4rem;
+    & .img-foto img {
+      position: absolute;
+      right: 0;
     }
+  }
 
-    #contato {
-      width: 100%;
-    }
+  .container-main {
+    padding: 0 2%;
 
-    .contato h2 {
-      font-size: 1rem;
+    & .meus-dados {
+      & .dados-pessoais {
+        padding: 0;
+      }
     }
+  }
 
-    .rodape ul li {
-      font-size: 0.05rem;
-    }
+  h1.nome_my {
+    font-size: 2rem;
+  }
 
-    .rodape ul li a I {
-      font-size: 2rem;
+  .text-pessoal {
+    font-size: 1rem;
+  }
+
+  .habilidades {
+    flex-direction: column;
+  }
+
+  .habilidades ul li {
+    width: 100%;
+    gap: 0.5rem;
+    font-size: 1px;
+
+    & i {
+      font-size: 0.2rem;
     }
+  }
+
+  .title_page h2 {
+    font-size: 1.4rem;
+  }
+
+  #contato {
+    width: 100%;
+  }
+
+  .contato h2 {
+    font-size: 1rem;
+  }
+
+  .rodape ul li {
+    font-size: 0.05rem;
+  }
+
+  .rodape ul li a I {
+    font-size: 2rem;
   }
 }
