@@ -531,6 +531,24 @@ body {
   color: #103f10;
 }
 
+.subir-top i {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 999;
+  background-color: rgba(2, 2, 2, 0.658);
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: rgb(219, 206, 206);
+  display: none;
+}
+
+.active-scroll i {
+  display: block;
+}
+
 @media screen and (max-width: 980px) {
   .container-bn {
     padding: 0 3%;
@@ -773,6 +791,12 @@ body {
 
   .contato h2 {
     font-size: 1rem;
+  }
+
+  .subir-top i {
+    font-size: 1rem;
+    right: 0.2rem;
+    z-index: 999;
   }
 
   .rodape ul li {

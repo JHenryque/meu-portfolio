@@ -48,4 +48,19 @@ document.addEventListener("DOMContentLoaded", () => {
       camposObrigatorio.classList.add("com_sucesso");
     }
   });
+
+  const btnTop = document.querySelector(".subir-top");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 750) {
+      btnTop.classList.add("active-scroll");
+    } else {
+      btnTop.classList.remove("active-scroll");
+    }
+  });
+  btnTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 });
