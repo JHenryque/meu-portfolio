@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="fontawesome/css/brands.css" rel="stylesheet" />
     <link href="fontawesome/css/solid.css" rel="stylesheet" />
-    <link href="fontawesome/css/sharp-thin.css" rel="stylesheet" />
-    <link href="fontawesome/css/duotone-thin.css" rel="stylesheet" />
-    <link href="fontawesome/css/sharp-duotone-thin.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/stylles.css" />
     <title>Meu Portfolio</title>
@@ -107,7 +104,6 @@
             data-aos-offset="0"
             >E-mail: josehenriquedevops@gmail.com</span
           >
-          <span>teste</span>
         </address>
       </div>
       <div
@@ -246,13 +242,16 @@
 
       <section class="projetos" id="projetos">
         <h2 data-aos="fade-up" data-aos-duration="1000">Projetos</h2>
-        <div class="flex-box">
-          <div
-            class="list-projeto"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-            data-aos-duration="1000"
-          >
+
+        <div class="flex-box" id="list-projetos">
+          <span
+            class="arrow left-arrow"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            ><i class="fa-solid fa-circle-chevron-left"></i
+          ></span>
+
+          <div class="list-projeto" data-aos="fade-left">
             <img src="img/books-firebase.png" alt="imagens do projeto" />
             <div class="card_text">
               <h3>Lista de livros</h3>
@@ -268,12 +267,7 @@
               >Ver Projeto</a
             >
           </div>
-          <div
-            class="list-projeto"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-            data-aos-duration="1000"
-          >
+          <div class="list-projeto" data-aos="fade-left">
             <img src="img/leyout llista.png" alt="imagens do projeto" />
             <div class="card_text">
               <h3>Lista de Compras</h3>
@@ -289,12 +283,7 @@
               >Ver Projeto</a
             >
           </div>
-          <div
-            class="list-projeto"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-          >
+          <div class="list-projeto" data-aos="fade-left">
             <img src="img/imc.jpg" alt="imagens do projeto" />
             <div class="card_text">
               <h3>Calcular IMC</h3>
@@ -310,12 +299,7 @@
               >Ver Projeto</a
             >
           </div>
-          <div
-            class="list-projeto"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-            data-aos-duration="1000"
-          >
+          <div class="list-projeto">
             <img src="img/agenda-digital.png" alt="imagens do projeto" />
             <div class="card_text">
               <h3>Agenda Digital</h3>
@@ -332,33 +316,8 @@
               >Ver Projeto</a
             >
           </div>
-          <div
-            class="list-projeto"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-            data-aos-duration="1000"
-          >
-            <img src="img/bytebank.png" alt="imagens do projeto" />
-            <div class="card_text">
-              <h3>Bytebank</h3>
-              <p>
-                Projeto para gerenciamento de valores de moeada. Criado com
-                JavaScript html e css.
-              </p>
-            </div>
-            <a
-              href="https://jhenryque.github.io/Bytebank/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Ver Projeto</a
-            >
-          </div>
-          <div
-            class="list-projeto"
-            data-aos="zoom-in"
-            data-aos-delay="600"
-            data-aos-duration="1000"
-          >
+
+          <div class="list-projeto">
             <img src="img/doctor-oline.png" alt="imagens do projeto" />
             <div class="card_text">
               <h3>Landing Page para Dr.Online</h3>
@@ -374,12 +333,7 @@
               >Ver Projeto</a
             >
           </div>
-          <div
-            class="list-projeto"
-            data-aos="zoom-in"
-            data-aos-delay="700"
-            data-aos-duration="1000"
-          >
+          <div class="list-projeto">
             <img src="img/cronomentro.png" alt="imagens do projeto" />
             <div class="card_text">
               <h3>Cronomentrar</h3>
@@ -396,6 +350,46 @@
               >Ver Projeto</a
             >
           </div>
+          <div class="list-projeto">
+            <img src="img/rhmangnt.png" alt="imagens do projeto" />
+            <div class="card_text">
+              <h3>Recursos Humanos</h3>
+              <p>
+                Projeto foi criado para Recursos Humanos, controle de
+                Funcionarios, departamentos e colaboradores etc..., o projeto
+                esta localizado no github. criado com linguagem PHP Laravel com
+                banco de dados MySQL
+              </p>
+            </div>
+            <a
+              href="https://github.com/JHenryque/projeto-rh_mangnt"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ver Projeto</a
+            >
+          </div>
+          <div class="list-projeto">
+            <img src="img/bytebank.png" alt="imagens do projeto" />
+            <div class="card_text">
+              <h3>Bytebank</h3>
+              <p>
+                Projeto para gerenciamento de valores de moeada. Criado com
+                JavaScript html e css.
+              </p>
+            </div>
+            <a
+              href="https://jhenryque.github.io/Bytebank/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ver Projeto</a
+            >
+          </div>
+          <span
+            class="arrow right-arrow"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            ><i class="fa-solid fa-circle-chevron-right"></i
+          ></span>
         </div>
       </section>
 
